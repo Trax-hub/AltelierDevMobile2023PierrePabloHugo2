@@ -1,4 +1,4 @@
-package com.example.altelierdevmobile2023pierrepablohugo2
+package com.example.atelierdevmobile2023pierrepablohugo2
 
 import org.junit.Test
 

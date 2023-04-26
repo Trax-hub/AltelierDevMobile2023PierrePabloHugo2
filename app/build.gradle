@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.altelierdevmobile2023pierrepablohugo2'
+    namespace 'com.example.atelierdevmobile2023pierrepablohugo2'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.altelierdevmobile2023pierrepablohugo2"
+        applicationId "com.example.atelierdevmobile2023pierrepablohugo2"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -63,4 +63,9 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    implementation 'com.squareup.picasso:picasso:+'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
 }

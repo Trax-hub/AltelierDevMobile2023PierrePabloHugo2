@@ -1,4 +1,4 @@
-package com.example.altelierdevmobile2023pierrepablohugo2.ui.theme
+package com.example.atelierdevmobile2023pierrepablohugo2.ui.theme
 
 import android.app.Activity
 import android.os.Build
