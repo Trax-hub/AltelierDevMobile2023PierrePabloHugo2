@@ -7,7 +7,6 @@ class QRCodeActivity : BaseActivity() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_qrcode)
             showBack()
-
-            //setHeaderTitle("QR Code")
+            setHeaderTitle("QR Code")
         }
 }

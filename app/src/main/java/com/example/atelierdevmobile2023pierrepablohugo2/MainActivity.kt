@@ -7,7 +7,7 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setHeaderTitle(getString(R.string.main_title))
+        setHeaderTitle("Accueil")
 
     }
 }

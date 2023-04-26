@@ -6,11 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_color"
-    tools:context=".MainActivity">
+    tools:context=".QRCodeActivity">
 
     <include
         android:id="@+id/include"
-        layout="@layout/layout_header"
+        layout="@layout/layout_header_back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
