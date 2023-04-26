@@ -15,7 +15,7 @@ class AccountActivity : BaseActivity(){
 
         val button = findViewById<AppCompatButton>(R.id.button_qr_code)
         button.setOnClickListener(View.OnClickListener {
-            val newIntent = Intent(application, RegisterActivity::class.java)
+            val newIntent = Intent(application, QRCodeActivity::class.java)
             startActivity(newIntent)
         })
 

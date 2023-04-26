@@ -6,7 +6,10 @@ class RegisterActivity : BaseActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        showBack()
         setContentView(R.layout.activity_register)
+
+
 
         //setHeaderTitle("Création de compte")
     }
