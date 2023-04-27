@@ -4,8 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import com.example.atelierdevmobile2023pierrepablohugo2.Model.User
+import com.example.atelierdevmobile2023pierrepablohugo2.Model.UserStorage
 import org.json.JSONObject
 
 class RegisterActivity : BaseActivity(){
@@ -46,9 +48,33 @@ class RegisterActivity : BaseActivity(){
 
         var createButton = findViewById<AppCompatButton>(R.id.create_button)
         createButton.setOnClickListener(View.OnClickListener {
-            val newIntent = Intent(application, MainActivity::class.java)
-            finishAffinity()
-            startActivity(newIntent)
+
+            if(!findViewById<EditText>(R.id.first_name).text.isNullOrBlank()
+                && !findViewById<EditText>(R.id.last_name).text.isNullOrBlank()
+                && !findViewById<EditText>(R.id.email).text.isNullOrBlank()
+                && !findViewById<EditText>(R.id.address).text.isNullOrBlank()
+                && !findViewById<EditText>(R.id.zip_code).text.isNullOrBlank()
+                && !findViewById<EditText>(R.id.city).text.isNullOrBlank()
+                && !findViewById<EditText>(R.id.cardRef).text.isNullOrBlank()){
+
+                val user = User(
+                    findViewById<EditText>(R.id.first_name).text.toString(),
+                    findViewById<EditText>(R.id.last_name).text.toString(),
+                    findViewById<EditText>(R.id.email).text.toString(),
+                    findViewById<EditText>(R.id.address).text.toString(),
+                    findViewById<EditText>(R.id.zip_code).text.toString().toInt(),
+                    findViewById<EditText>(R.id.city).text.toString(),
+                    findViewById<EditText>(R.id.cardRef).text.toString().toInt()
+                )
+                UserStorage.saveUser(this, user)
+
+                val newIntent = Intent(application, MainActivity::class.java)
+                finishAffinity()
+                startActivity(newIntent)
+            }
+            else{
+                Toast.makeText(this, "Merci de remplir tout les champs", Toast.LENGTH_SHORT).show()
+            }
         })
     }
 }

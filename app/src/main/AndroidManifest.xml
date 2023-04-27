@@ -35,7 +35,7 @@
             android:name=".AccountActivity"
             android:exported="false" />
         <activity
-            android:name=".QRCodeActivity"
+            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"

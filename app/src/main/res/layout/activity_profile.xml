@@ -6,25 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_color"
-    tools:context=".AccountActivity">
+    tools:context=".MainActivity">
 
     <include
         layout="@layout/layout_header_back"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="14dp"/>
+        android:layout_height="wrap_content" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="14dp"
         android:background="@drawable/layout_background">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="center"
-            android:padding="14dp">
+            android:gravity="center">
 
             <EditText
                 android:id="@+id/last_name"
@@ -82,24 +81,21 @@
                 android:paddingHorizontal="8dp"
                 android:hint="Ville" />
 
-            <EditText
-                android:id="@+id/cardRef"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginBottom="12dp"
-                android:background="@drawable/background_field"
-                android:paddingHorizontal="8dp"
-                android:inputType="number"
-                android:hint="Carte de fidélité" />
-
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/create_button"
+                android:id="@+id/save_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Créer"/>
+                android:text="Enregistrer les modifications"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/disconnect_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Déconnexion"/>
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </ScrollView>
+
 </LinearLayout>
