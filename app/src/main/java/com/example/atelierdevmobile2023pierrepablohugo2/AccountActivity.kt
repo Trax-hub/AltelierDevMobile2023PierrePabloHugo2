@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.widget.AppCompatButton
+import androidx.appcompat.widget.LinearLayoutCompat
 import com.google.zxing.integration.android.IntentIntegrator
 
 class AccountActivity : BaseActivity(){
@@ -12,7 +13,7 @@ class AccountActivity : BaseActivity(){
         setContentView(R.layout.activity_account)
         setHeaderTitle("Création de compte")
 
-        val button = findViewById<AppCompatButton>(R.id.button_qr_code)
+        val button = findViewById<LinearLayoutCompat>(R.id.button_qr_code)
         button.setOnClickListener(View.OnClickListener {
             val scanner = IntentIntegrator(this)
             scanner.setOrientationLocked(true)

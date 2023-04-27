@@ -22,9 +22,12 @@ class MainActivity : BaseActivity() {
 
         //On génère le code barre et on l'affiche
         findViewById<TextView>(R.id.bar_code_text).setText(user?.cardRef.toString())
-        val barcodeBitmap = generateBarcodeBitmap(user?.cardRef.toString(), BarcodeFormat.CODE_128, 800, 200)
+        val barcodeBitmap = generateBarcodeBitmap(user?.cardRef.toString(), BarcodeFormat.CODE_128, 600, 300)
         val barCode = findViewById<ImageView>(R.id.bar_code)
         barCode.setImageBitmap(barcodeBitmap)
+
+        //On affiche le nom de l'utilisateur
+        findViewById<TextView>(R.id.name).setText(user?.firstName + " " + user?.lastName)
 
         findViewById<ImageView>(R.id.profile).setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
