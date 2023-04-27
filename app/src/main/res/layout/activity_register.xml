@@ -63,7 +63,7 @@
                 android:hint="Adresse" />
 
             <EditText
-                android:id="@+id/post_code"
+                android:id="@+id/zip_code"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
@@ -81,7 +81,7 @@
                 android:hint="Ville" />
 
             <EditText
-                android:id="@+id/card"
+                android:id="@+id/cardRef"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
