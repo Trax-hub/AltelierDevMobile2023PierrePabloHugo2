@@ -41,6 +41,11 @@
             android:name=".RegisterActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".ProductActivity"
+            android:exported="false" />
+
+
     </application>
 
 </manifest>

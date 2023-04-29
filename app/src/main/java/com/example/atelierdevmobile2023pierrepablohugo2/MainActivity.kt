@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import com.example.atelierdevmobile2023pierrepablohugo2.Model.UserStorage
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.MultiFormatWriter
@@ -30,21 +31,11 @@ class MainActivity : BaseActivity() {
         //On affiche le nom de l'utilisateur
         findViewById<TextView>(R.id.name).setText(user?.firstName + " " + user?.lastName)
 
-        // Find the navbar view and its child views
-        // Find the navbar view and its child views
-        /* val navbar = findViewById<LinearLayout>(R.id.navbar)
-        val cartes = findViewById<TextView>(R.id.carteElem)
-        val offres = findViewById<TextView>(R.id.offresElem)
-        val magasins = findViewById<TextView>(R.id.magasinsElem)*
-        // Set up event listeners for the navbar child views
 
-        // Set up event listeners for the navbar child views
-        cartes.setOnClickListener {
-            // Handle click event for "Cartes" view
-        }*/
-
-        // Repeat the above for the "Offres" and "Magasins" views
-
+        findViewById<TextView>(R.id.offresElem).setOnClickListener {
+            val intent = Intent(this, ProductActivity::class.java)
+            startActivity(intent)
+        }
 
         findViewById<ImageView>(R.id.profile).setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
