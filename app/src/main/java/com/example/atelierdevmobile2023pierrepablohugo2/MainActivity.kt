@@ -4,12 +4,14 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.example.atelierdevmobile2023pierrepablohugo2.Model.UserStorage
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.MultiFormatWriter
 import com.google.zxing.WriterException
 import com.google.zxing.common.BitMatrix
+
 
 class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +21,6 @@ class MainActivity : BaseActivity() {
 
         //On récupère l'utilisateur
         val user = UserStorage.getUser(this)
-
         //On génère le code barre et on l'affiche
         findViewById<TextView>(R.id.bar_code_text).setText(user?.cardRef.toString())
         val barcodeBitmap = generateBarcodeBitmap(user?.cardRef.toString(), BarcodeFormat.CODE_128, 600, 300)
@@ -28,6 +29,22 @@ class MainActivity : BaseActivity() {
 
         //On affiche le nom de l'utilisateur
         findViewById<TextView>(R.id.name).setText(user?.firstName + " " + user?.lastName)
+
+        // Find the navbar view and its child views
+        // Find the navbar view and its child views
+        /* val navbar = findViewById<LinearLayout>(R.id.navbar)
+        val cartes = findViewById<TextView>(R.id.carteElem)
+        val offres = findViewById<TextView>(R.id.offresElem)
+        val magasins = findViewById<TextView>(R.id.magasinsElem)*
+        // Set up event listeners for the navbar child views
+
+        // Set up event listeners for the navbar child views
+        cartes.setOnClickListener {
+            // Handle click event for "Cartes" view
+        }*/
+
+        // Repeat the above for the "Offres" and "Magasins" views
+
 
         findViewById<ImageView>(R.id.profile).setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
