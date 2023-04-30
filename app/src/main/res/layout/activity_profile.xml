@@ -5,36 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary_color"
-    tools:context=".AccountActivity">
+    tools:context=".ProductActivity">
 
     <include
         layout="@layout/layout_header_back"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="14dp"/>
+        android:layout_height="wrap_content" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
         android:background="@drawable/layout_background">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center"
-            android:padding="14dp">
+            android:padding="10dp"
+            android:gravity="center">
 
             <EditText
                 android:id="@+id/last_name"
+                android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
-                android:inputType="text"
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
-                android:hint="@string/nom" />
+                android:hint="@string/nom2" />
 
             <EditText
                 android:id="@+id/first_name"
@@ -64,7 +63,7 @@
                 android:inputType="text"
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
-                android:hint="@string/adresse" />
+                android:hint="@string/adresse2" />
 
             <EditText
                 android:id="@+id/zip_code"
@@ -74,36 +73,38 @@
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
                 android:inputType="number"
-                android:hint="@string/postcode" />
+                android:hint="@string/code_postal" />
 
             <EditText
                 android:id="@+id/city"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="35dp"
                 android:inputType="text"
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
                 android:hint="@string/ville" />
 
-            <EditText
-                android:id="@+id/cardRef"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginBottom="12dp"
-                android:background="@drawable/background_field"
-                android:paddingHorizontal="8dp"
-                android:inputType="number"
-                android:hint="@string/carte_de_fid_lit" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_button"
+                android:layout_width="256dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:textAllCaps="false"
+                android:background="@drawable/background_product_item"
+                android:text="@string/enregistrer_les_modifications"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/create_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cr_er"/>
+                android:id="@+id/disconnect_button"
+                android:layout_width="200dp"
+                android:layout_height="64dp"
+                android:textAllCaps="false"
+                android:background="@drawable/background_product_item"
+                android:text="Déconnexion"/>
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </ScrollView>
+    <include layout="@layout/activity_navbar"/>
 </LinearLayout>

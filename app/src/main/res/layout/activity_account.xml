@@ -6,10 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_color"
-    tools:context=".MainActivity">
+    tools:context=".AccountActivity">
 
     <include
-        android:id="@+id/include"
         layout="@layout/layout_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -17,25 +16,40 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="14dp"
         android:background="@drawable/layout_background">
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/button_qr_code"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:layout_gravity="center"
+            android:padding="14dp">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_qr_code"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="QR code"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:background="@drawable/background_product_item">
+
+                <ImageView
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:contentDescription="@string/qr_code"
+                    android:src="@drawable/ic_qr_code"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_form"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Remplir le formulaire manuellement"/>
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/background_product_item"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:text="@string/remplir_formulaire"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

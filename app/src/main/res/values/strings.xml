@@ -1,29 +1,40 @@
 <resources>
     <string name="app_name">AtelierDevMobile2023PierrePabloHugo2</string>
-    <string name="title_rayons">Rayons</string>
-    <string name="title_produits">Produits</string>
-    <string name="title_students">Infos</string>
-    <string name="main_title">EPSI</string>
+    <string name="qr_code">qr code</string>
+    <string name="remplir_formulaire">Remplir le formulaire manuellement</string>
+    <string name="magasin">magasin</string>
+    <string name="adresse">Adresse</string>
+    <string name="postcode">Code postal - ville</string>
+    <string name="description">Description</string>
+    <string name="not_found">Not found</string>
+    <string name="barcode">barcode</string>
+    <string name="carte">Carte</string>
+    <string name="offres">Offres</string>
+    <string name="magasins">Magasins</string>
+    <string name="produit">produit</string>
+    <string name="nom">Nom</string>
+    <string name="desc">Desc</string>
+    <string name="ville">Ville</string>
+    <string name="enregistrer_les_modifications">Enregistrer les modifications</string>
+    <string name="nom2">Nom</string>
+    <string name="pr_nom">Prénom</string>
+    <string name="email">Email</string>
+    <string name="adresse2">Adresse</string>
+    <string name="code_postal">Code postal</string>
+    <string name="carte_de_fid_lit">Carte de fidélité</string>
+    <string name="cr_er">Créer</string>
+    <string name="title">Title</string>
+    <string name="logo">logo</string>
+    <string name="retour">retour</string>
 
 
     <!-- HOME -->
-    <string name="home_title">Bienvenue sur notre première app mobile 👋🏼</string>
-    <string name="home_subtitle">Nous allons pouvoir tester nos compétences et voir si toutes les fonctionnalités sont maitrisées</string>
 
     <!-- INFO -->
-    <string name="info_title">Listes de étudiants de l’EPSI 🎓</string>
-    <string name="info_subtitle">Retrouvez la liste et consulter les details</string>
 
     <!-- INFO -->
-    <string name="rayon_title">Découvrez tous les rayons 🍔</string>
-    <string name="rayon_subtitle">Cliquez sur votre rayons pour voir les produits associés</string>
 
     <!-- CTA & BTN -->
-    <string name="cta_infos">Voir les étudiants et leurs information</string>
-    <string name="cta_products">Trouvez les produits et voir les details</string>
-    <string name="cta_epsi">Aller sur le site de l’EPSI</string>
-    <string name="see_more">Voir plus</string>
-    <string name="know_more">En savoir plus</string>
 
 
 
