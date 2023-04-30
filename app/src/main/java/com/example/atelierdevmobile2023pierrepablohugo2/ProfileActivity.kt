@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import com.example.atelierdevmobile2023pierrepablohugo2.Model.User
@@ -52,6 +53,12 @@ class ProfileActivity : BaseActivity() {
                 Toast.makeText(this, "Merci de remplir tout les champs", Toast.LENGTH_SHORT).show()
             }
         }
+
+        findViewById<TextView>(R.id.offresElem).setOnClickListener {
+            val intent = Intent(this, ProductActivity::class.java)
+            startActivity(intent)
+        }
+
 
         var disconnectButton = findViewById<AppCompatButton>(R.id.disconnect_button)
         disconnectButton.setOnClickListener(View.OnClickListener {

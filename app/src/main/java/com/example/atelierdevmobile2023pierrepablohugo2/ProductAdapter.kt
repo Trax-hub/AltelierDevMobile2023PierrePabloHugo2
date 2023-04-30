@@ -29,7 +29,6 @@ class ProductAdapter(private val productList: List<Product>) : RecyclerView.Adap
         holder.nameTextView.text = product.nom
         holder.descTextView.text = product.desc
         Picasso.get().load(product.img).into(holder.imageView)
-        Toast.makeText(holder.descTextView.context,product.nom,Toast.LENGTH_SHORT).show()
     }
 
     override fun getItemCount(): Int {

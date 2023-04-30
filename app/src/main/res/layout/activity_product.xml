@@ -11,7 +11,6 @@
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:background="@color/primary_color"
         android:id="@+id/product_image"/>
 
     <LinearLayout
@@ -37,7 +36,8 @@
         android:layout_height="match_parent"
         android:text="Desc"
         android:paddingTop="10dp"
-        android:textSize="14sp"/>
+        android:textSize="14sp"
+        android:maxLines="2"/>
 
     </LinearLayout>
 

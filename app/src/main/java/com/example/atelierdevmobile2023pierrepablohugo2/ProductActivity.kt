@@ -1,6 +1,8 @@
 package com.example.atelierdevmobile2023pierrepablohugo2
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import okhttp3.*
@@ -22,6 +24,11 @@ class ProductActivity : BaseActivity() {
 
         val rayonAdapter=ProductAdapter(products)
         recyclerviewProducts.adapter=rayonAdapter
+
+        findViewById<ImageView>(R.id.profile).setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
 
         val okHttpClient: OkHttpClient = OkHttpClient.Builder().build()
         val requestUrl="https://www.ugarit.online/epsi/offers.json"
