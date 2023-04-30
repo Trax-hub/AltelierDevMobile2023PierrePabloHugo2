@@ -3,6 +3,7 @@ package com.example.atelierdevmobile2023pierrepablohugo2
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import okhttp3.*
@@ -27,6 +28,11 @@ class ProductActivity : BaseActivity() {
 
         findViewById<ImageView>(R.id.profile).setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<TextView>(R.id.magasinsElem).setOnClickListener {
+            val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
         }
 

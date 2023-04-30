@@ -14,7 +14,7 @@ import com.google.zxing.WriterException
 import com.google.zxing.common.BitMatrix
 
 
-class MainActivity : BaseActivity() {
+class MainActivity: BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,6 +34,11 @@ class MainActivity : BaseActivity() {
 
         findViewById<TextView>(R.id.offresElem).setOnClickListener {
             val intent = Intent(this, ProductActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<TextView>(R.id.magasinsElem).setOnClickListener {
+            val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
         }
 

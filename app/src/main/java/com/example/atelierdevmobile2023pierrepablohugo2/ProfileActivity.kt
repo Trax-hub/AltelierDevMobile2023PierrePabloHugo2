@@ -59,6 +59,11 @@ class ProfileActivity : BaseActivity() {
             startActivity(intent)
         }
 
+        findViewById<TextView>(R.id.magasinsElem).setOnClickListener {
+            val intent = Intent(this, MapActivity::class.java)
+            startActivity(intent)
+        }
+
 
         var disconnectButton = findViewById<AppCompatButton>(R.id.disconnect_button)
         disconnectButton.setOnClickListener(View.OnClickListener {
