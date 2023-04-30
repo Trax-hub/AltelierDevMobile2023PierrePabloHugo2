@@ -1,4 +1,5 @@
 package com.example.atelierdevmobile2023pierrepablohugo2
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -29,7 +30,6 @@ internal class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
@@ -49,7 +49,7 @@ internal class MapActivity : AppCompatActivity(), OnMapReadyCallback {
                     for (i in 0 until arrayPoints.length()) {
                         val js = arrayPoints.getJSONObject(i)
                         val point = PointMap(
-                            js.optInt("storeId", -1),
+                            js.optDouble("storeId", -1.0),
                             js.optString("name", "not found"),
                             js.optString("description", "not found"),
                             js.optString("pictureStore", urlDefault),
@@ -80,21 +80,36 @@ internal class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
     }
 
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
         val pointTest = LatLng( 48.0, 3.0)
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pointTest))
+
+        mMap.setOnMarkerClickListener { marker ->
+            val point = pointsMap.find { it.nom == marker.title }
+
+            val intent = Intent(this, MagasinActivity::class.java)
+
+            if(point!=null){
+                intent.putExtra("id", point.storeId)
+                intent.putExtra("name", point.nom)
+                intent.putExtra("description", point.desc)
+                intent.putExtra("imgUrl", point.pictureStore)
+                intent.putExtra("address", point.adresse)
+                intent.putExtra("zipcode", point.codePostal)
+                intent.putExtra("city", point.ville)
+                intent.putExtra("longitude", point.longitude)
+                intent.putExtra("latitude", point.latitude)
+                startActivity(intent)
+            }
+
+
+            true
+        }
     }
+
+
 }
 
       

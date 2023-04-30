@@ -1,7 +1,7 @@
 package com.example.atelierdevmobile2023pierrepablohugo2
 
 class PointMap {
-    var storeId: Int
+    var storeId: Double
     var nom: String
     var desc: String
     var pictureStore: String
@@ -11,7 +11,7 @@ class PointMap {
     var latitude: Double
     var longitude: Double
 
-    constructor(storeId: Int, nom: String, desc: String, pictureStore: String, adresse: String, codePostal: String, ville: String, latitude: Double, longitude: Double) {
+    constructor(storeId: Double, nom: String, desc: String, pictureStore: String, adresse: String, codePostal: String, ville: String, latitude: Double, longitude: Double) {
         this.storeId = storeId
         this.nom = nom
         this.desc = desc
