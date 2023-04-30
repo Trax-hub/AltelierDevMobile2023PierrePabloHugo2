@@ -1,5 +1,31 @@
 <resources>
     <string name="app_name">AtelierDevMobile2023PierrePabloHugo2</string>
+    <string name="qr_code">qr code</string>
+    <string name="remplir_formulaire">Remplir le formulaire manuellement</string>
+    <string name="magasin">magasin</string>
+    <string name="adresse">Adresse</string>
+    <string name="postcode">Code postal - ville</string>
+    <string name="description">Description</string>
+    <string name="not_found">Not found</string>
+    <string name="barcode">barcode</string>
+    <string name="carte">Carte</string>
+    <string name="offres">Offres</string>
+    <string name="magasins">Magasins</string>
+    <string name="produit">produit</string>
+    <string name="nom">Nom</string>
+    <string name="desc">Desc</string>
+    <string name="ville">Ville</string>
+    <string name="enregistrer_les_modifications">Enregistrer les modifications</string>
+    <string name="nom2">Nom</string>
+    <string name="pr_nom">Prénom</string>
+    <string name="email">Email</string>
+    <string name="adresse2">Adresse</string>
+    <string name="code_postal">Code postal</string>
+    <string name="carte_de_fid_lit">Carte de fidélité</string>
+    <string name="cr_er">Créer</string>
+    <string name="title">Title</string>
+    <string name="logo">logo</string>
+    <string name="retour">retour</string>
 
 
     <!-- HOME -->

@@ -31,7 +31,6 @@ class MainActivity: BaseActivity() {
         //On affiche le nom de l'utilisateur
         findViewById<TextView>(R.id.name).setText(user?.firstName + " " + user?.lastName)
 
-
         findViewById<TextView>(R.id.offresElem).setOnClickListener {
             val intent = Intent(this, ProductActivity::class.java)
             startActivity(intent)

@@ -31,18 +31,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
+                android:inputType="text"
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
-                android:hint="Nom" />
+                android:hint="@string/nom" />
 
             <EditText
                 android:id="@+id/first_name"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
+                android:inputType="text"
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
-                android:hint="Prénom" />
+                android:hint="@string/pr_nom" />
 
             <EditText
                 android:id="@+id/email"
@@ -52,16 +54,17 @@
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
                 android:inputType="textEmailAddress"
-                android:hint="Email" />
+                android:hint="@string/email" />
 
             <EditText
                 android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
+                android:inputType="text"
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
-                android:hint="Adresse" />
+                android:hint="@string/adresse" />
 
             <EditText
                 android:id="@+id/zip_code"
@@ -71,16 +74,17 @@
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
                 android:inputType="number"
-                android:hint="Code postal" />
+                android:hint="@string/postcode" />
 
             <EditText
                 android:id="@+id/city"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
+                android:inputType="text"
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
-                android:hint="Ville" />
+                android:hint="@string/ville" />
 
             <EditText
                 android:id="@+id/cardRef"
@@ -90,13 +94,13 @@
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
                 android:inputType="number"
-                android:hint="Carte de fidélité" />
+                android:hint="@string/carte_de_fid_lit" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/create_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Créer"/>
+                android:text="@string/cr_er"/>
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>

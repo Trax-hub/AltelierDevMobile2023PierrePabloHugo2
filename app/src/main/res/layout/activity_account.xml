@@ -22,7 +22,7 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/button_qr_code"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
             android:padding="14dp">
@@ -37,6 +37,7 @@
                 <ImageView
                     android:layout_width="86dp"
                     android:layout_height="86dp"
+                    android:contentDescription="@string/qr_code"
                     android:src="@drawable/ic_qr_code"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -48,7 +49,7 @@
                 android:background="@drawable/background_product_item"
                 android:textAllCaps="false"
                 android:textSize="16sp"
-                android:text="Remplir le formulaire manuellement"/>
+                android:text="@string/remplir_formulaire"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

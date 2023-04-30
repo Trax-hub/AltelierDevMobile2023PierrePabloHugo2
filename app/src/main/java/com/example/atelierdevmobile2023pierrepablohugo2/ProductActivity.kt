@@ -31,6 +31,11 @@ class ProductActivity : BaseActivity() {
             startActivity(intent)
         }
 
+        findViewById<TextView>(R.id.carteElem).setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         findViewById<TextView>(R.id.magasinsElem).setOnClickListener {
             val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)

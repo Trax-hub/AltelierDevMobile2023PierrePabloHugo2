@@ -15,6 +15,7 @@
 
     <ImageView
         android:layout_width="match_parent"
+        android:contentDescription="@string/magasin"
         android:layout_height="300dp"
         android:id="@+id/magasin_image"/>
 
@@ -28,7 +29,7 @@
             android:id="@+id/adresseTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Adresse"
+            android:text="@string/adresse"
             android:textSize="24sp"
             android:padding="10dp" />
 
@@ -36,7 +37,7 @@
             android:id="@+id/codePostalTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Code postal - ville"
+            android:text="@string/postcode"
             android:textSize="24sp"
             android:padding="10dp" />
 
@@ -44,7 +45,7 @@
             android:id="@+id/descriptionTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Description"
+            android:text="@string/description"
             android:textSize="18sp"
             android:padding="10dp" />
     </LinearLayout>

@@ -32,10 +32,11 @@
             android:layout_marginBottom="64dp"
             android:textSize="22sp"
             android:textColor="@color/black"
-            android:text="Not found"/>
+            android:text="@string/not_found"/>
 
         <ImageView
             android:id="@+id/bar_code"
+            android:contentDescription="@string/barcode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"/>

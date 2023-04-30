@@ -17,7 +17,7 @@
         android:id="@+id/productsRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="550dp"
-        android:padding="16dp"
+        android:padding="8dp"
         android:paddingTop="30dp" />
 
     <include

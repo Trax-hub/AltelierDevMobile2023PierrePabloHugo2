@@ -40,6 +40,11 @@ class MagasinActivity : BaseActivity() {
 
         Picasso.get().load(imgUrl).into(findViewById<ImageView>(R.id.magasin_image))
 
+        findViewById<TextView>(R.id.carteElem).setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         findViewById<TextView>(R.id.offresElem).setOnClickListener {
             val intent = Intent(this, ProductActivity::class.java)
             startActivity(intent)

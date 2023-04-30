@@ -12,11 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="wrap_content"
         android:padding="14dp"
         android:background="@drawable/layout_background">
 
@@ -29,21 +27,23 @@
 
             <EditText
                 android:id="@+id/last_name"
+                android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
-                android:hint="Nom" />
+                android:hint="@string/nom2" />
 
             <EditText
                 android:id="@+id/first_name"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
+                android:inputType="text"
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
-                android:hint="Prénom" />
+                android:hint="@string/pr_nom" />
 
             <EditText
                 android:id="@+id/email"
@@ -53,16 +53,17 @@
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
                 android:inputType="textEmailAddress"
-                android:hint="Email" />
+                android:hint="@string/email" />
 
             <EditText
                 android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
+                android:inputType="text"
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
-                android:hint="Adresse" />
+                android:hint="@string/adresse2" />
 
             <EditText
                 android:id="@+id/zip_code"
@@ -72,16 +73,17 @@
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
                 android:inputType="number"
-                android:hint="Code postal" />
+                android:hint="@string/code_postal" />
 
             <EditText
                 android:id="@+id/city"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="35dp"
+                android:inputType="text"
                 android:background="@drawable/background_field"
                 android:paddingHorizontal="8dp"
-                android:hint="Ville" />
+                android:hint="@string/ville" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/save_button"
@@ -90,7 +92,7 @@
                 android:layout_marginBottom="16dp"
                 android:textAllCaps="false"
                 android:background="@drawable/background_product_item"
-                android:text="Enregistrer les modifications"/>
+                android:text="@string/enregistrer_les_modifications"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/disconnect_button"
