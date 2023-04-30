@@ -26,3 +26,5 @@ replay_pid*
 
 local.properties
 .DS_Store
+
+.gradle/
